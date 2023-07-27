@@ -1,7 +1,9 @@
+import Landing from "./pages/Landing";
+
 const App = () => {
   return (
     <div>
-      <h1>Jobster</h1>
+      <Landing />
     </div>
   );
 };
