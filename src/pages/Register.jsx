@@ -10,7 +10,7 @@ const initialState = {
 };
 
 const Register = () => {
-  const [values, setVaslues] = useState(initialState);
+  const [values, setValues] = useState(initialState);
 
   const handleChange = (e) => {
     console.log(e.target);
@@ -29,7 +29,21 @@ const Register = () => {
         <FormRow
           type="text"
           name="name"
-          value={values.change}
+          value={values.name}
+          handleChange={handleChange}
+        />
+        {/* Email field */}
+        <FormRow
+          type="email"
+          name="email"
+          value={values.email}
+          handleChange={handleChange}
+        />
+        {/* Password field */}
+        <FormRow
+          type="password"
+          name="password"
+          value={values.password}
           handleChange={handleChange}
         />
         <button type="submit" className="btn btn-block">
